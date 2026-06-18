@@ -1,4 +1,4 @@
-LPCVC: Low-Power Computer Vision Optimization (Rank 11)
+LPCVC: Low-Power Computer Vision Optimization (Rank 10)
 Team name: 	Novel Edge AI
 This repository showcases the optimization strategies and architectural innovations used to achieve Rank 11 in the Low-Power Computer Vision Challenge (LPCVC).
 🔬 Technical Innovation: SurgicalNovelEdgeAI
