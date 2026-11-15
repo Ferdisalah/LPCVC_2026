@@ -1,0 +1,83 @@
+{
+    "experiment": "PAIRED_OLD_NEW_OOF_SHAP",
+    "old_run_directory": "/content/drive/MyDrive/Competition/output/CATBOOST_LGBM_XGBOOST_LOCAL_500_NEIGHBOR_INTERACTION/COMPETITION_SUBMISSION/CATBOOST_OOF_REPRODUCTION_WITH_SAVED_MODELS_20261114_232613",
+    "new_run_directory": "/content/drive/MyDrive/Competition/output/CATBOOST_LGBM_XGBOOST_LOCAL_500_NEIGHBOR_INTERACTION/COMPETITION_SUBMISSION/CATBOOST_CREDIT_TERM_PAIRED_EXPERIMENT_20261115_064641",
+    "training_data": "/content/drive/MyDrive/Competition/input/train.csv",
+    "old_oof": "/content/drive/MyDrive/Competition/output/CATBOOST_LGBM_XGBOOST_LOCAL_500_NEIGHBOR_INTERACTION/COMPETITION_SUBMISSION/CATBOOST_OOF_REPRODUCTION_WITH_SAVED_MODELS_20261114_232613/CATBOOST_OOF_RANKING_FULLDATA.csv",
+    "new_oof": "/content/drive/MyDrive/Competition/output/CATBOOST_LGBM_XGBOOST_LOCAL_500_NEIGHBOR_INTERACTION/COMPETITION_SUBMISSION/CATBOOST_CREDIT_TERM_PAIRED_EXPERIMENT_20261115_064641/CREDIT_TERM_OOF_RANKING_FULLDATA.csv",
+    "output_directory": "/content/drive/MyDrive/Competition/output/CATBOOST_LGBM_XGBOOST_LOCAL_500_NEIGHBOR_INTERACTION/COMPETITION_SUBMISSION/CATBOOST_CREDIT_TERM_PAIRED_EXPERIMENT_20261115_064641/SHAP_OLD_NEW_GLOBAL_20261115_091735",
+    "customers": 171202,
+    "old_features": 32,
+    "new_features": 33,
+    "common_features": 32,
+    "new_only_feature": "CREDIT_TERM",
+    "folds": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "fold_assignments_identical": true,
+    "target_assignments_identical": true,
+    "shap_type": "CatBoost ShapValues",
+    "shap_scale": "RawFormulaVal / model raw-score scale",
+    "calculation_scope": "Every OOF customer is evaluated by the corresponding saved model that did not train on that customer.",
+    "chunk_size": 2048,
+    "thread_count": 2,
+    "old_training_device": "GPU",
+    "new_training_device": "CPU",
+    "training_repeated": false,
+    "source_files_modified": false,
+    "additivity_audit": [
+        {
+            "FOLD": 1,
+            "OLD_STATUS": "PASSED",
+            "OLD_MAX_ADDITIVITY_ERROR": 2.7533531010703882e-14,
+            "OLD_AUDIT_MESSAGE": "",
+            "NEW_STATUS": "PASSED",
+            "NEW_MAX_ADDITIVITY_ERROR": 3.8191672047105385e-14,
+            "NEW_AUDIT_MESSAGE": ""
+        },
+        {
+            "FOLD": 2,
+            "OLD_STATUS": "PASSED",
+            "OLD_MAX_ADDITIVITY_ERROR": 2.3092638912203256e-14,
+            "OLD_AUDIT_MESSAGE": "",
+            "NEW_STATUS": "PASSED",
+            "NEW_MAX_ADDITIVITY_ERROR": 6.572520305780927e-14,
+            "NEW_AUDIT_MESSAGE": ""
+        },
+        {
+            "FOLD": 3,
+            "OLD_STATUS": "PASSED",
+            "OLD_MAX_ADDITIVITY_ERROR": 3.907985046680551e-14,
+            "OLD_AUDIT_MESSAGE": "",
+            "NEW_STATUS": "PASSED",
+            "NEW_MAX_ADDITIVITY_ERROR": 4.3520742565306136e-14,
+            "NEW_AUDIT_MESSAGE": ""
+        },
+        {
+            "FOLD": 4,
+            "OLD_STATUS": "PASSED",
+            "OLD_MAX_ADDITIVITY_ERROR": 3.597122599785507e-14,
+            "OLD_AUDIT_MESSAGE": "",
+            "NEW_STATUS": "PASSED",
+            "NEW_MAX_ADDITIVITY_ERROR": 3.9968028886505635e-14,
+            "NEW_AUDIT_MESSAGE": ""
+        },
+        {
+            "FOLD": 5,
+            "OLD_STATUS": "PASSED",
+            "OLD_MAX_ADDITIVITY_ERROR": 2.90878432451791e-14,
+            "OLD_AUDIT_MESSAGE": "",
+            "NEW_STATUS": "PASSED",
+            "NEW_MAX_ADDITIVITY_ERROR": 2.930988785010413e-14,
+            "NEW_AUDIT_MESSAGE": ""
+        }
+    ],
+    "catboost_version": "1.2.10",
+    "numpy_version": "2.4.6",
+    "pandas_version": "2.2.3",
+    "paired_customer_shap": "SHAP_PER_CUSTOMER_PAIRED.npz"
+}
